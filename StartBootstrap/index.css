@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+    position: fixed;
+    background-color: rgb(41, 42, 42);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+
+    width: 80%;
+}
+
+.logo {
+    width: 30%;
+}
+
+.logo img {
+    width: 50%;
+
+}
+
+ul {
+    display: flex;
+    gap: 60px;
+}
+
+ul li {
+    display: flex;
+
+}
+
+ul li a {
+    text-decoration: none;
+    font-family: "Metropolis" sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    color:
+        rgb(255, 255, 255);
+}
+
+#first {
+    background-image: url(./header-bg.jpg);
+    height: 90VH;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sectionOne {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+
+
+
+}
+
+.sectionOne h2 {
+    font-size: 20px;
+    font-family: "Metropolis" sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.sectionOne h1 {
+    font-family: "Metropolis" sans-serif;
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+
+}
+
+.sectionOne button {
+    padding: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #FFC800;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#sectionTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.containerSce {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    text-align: center;
+    gap: 40px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-solid {
+    padding: 40PX;
+    font-size: 35px;
+    background-color: #FFC800;
+    border-radius: 100%;
+    color: white;
+
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.icons h1 {
+    font-size: 33px;
+    font-weight: 800;
+
+}
+
+.icons p {
+    font-size: 20px;
+    color: rgb(124, 124, 124);
+}
+
+.second h1 {
+    font-size: 40px;
+    padding-bottom: 15px;
+    font-weight: 800;
+
+}
+
+.second p {
+    font-size: 20px;
+    color: rgb(124, 124, 124);
+}
+
+#cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.containerCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 27px;
+    width: 70%;
+}
+
+.cardsTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+}
+
+.cardsTop h1 {
+    font-size: 42px;
+}
+
+.cardsTop p {
+    font-size: 20px;
+    color: rgb(125, 125, 126);
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 84%;
+    flex-wrap: wrap;
+}
+
+.productCard img:hover {
+    color: #FFC800;
+
+}
+
+.productCard {
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    transition: 0.6s;
+
+    text-align: center;
+    gap: 10px;
+    width: 29%;
+    padding-bottom: 16px;
+
+}
+
+.productCard p {
+    font-size: 17px;
+    color: rgb(133, 134, 134);
+    padding-bottom: 10px;
+
+}
+
+.productCard img {
+    width: 100%;
+
+}
+
+.overlay .fa-plus {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    color: aliceblue;
+    font-weight: 1100;
+    transition: 0.6s;
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 73%;
+    background-color: transparent;
+    transition: 0.6s;
+}
+
+.productCard:hover .overlay {
+   
+    transition: 0.6s;
+    background-color: #FFC800;
+    display: block;
+}
